@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0; }
+  
+  .envelope {
+    width: 200px; height: 150px; background: #e0d0b0;
+    position: relative; cursor: pointer; transition: 0.5s;
+  }
+
+  /* The Flap */
+  .flap {
+    width: 0; height: 0; border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 80px solid #d0c0a0;
+    position: absolute; top: 0; transition: transform 0.5s;
+    transform-origin: top;
+  }
+
+  /* When envelope is open */
+  .envelope.open .flap { transform: rotateX(180deg); }
+  
+  .message {
+    position: absolute; top: 20px; left: 10px; width: 180px;
+    background: white; padding: 10px; opacity: 0; transition: 0.5s;
+  }
+  .envelope.open .message { opacity: 1; top: -50px; }
+</style>
+</head>
+<body>
+
+<div class="envelope" onclick="this.classList.toggle('open')">
+  <div class="flap"></div>
+  <div class="message">Surprise! 🎉</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MATT MATT</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      .cedarville-cursive-regular {
+        font-family: "Cedarville Cursive", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-[url('walll2.jpg')]">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <div
+        class="max-w-md mx-auto bg-white border border-gray-300 rounded-lg overflow-hidden my-6"
+      >
+        <div class="flex items-center px-4 py-3">
+          <img
+            class="h-10 w-10 rounded-full object-cover border border-gray-200"
+            src="./pic/ig.JPG"
+            alt="Avatar"
+          />
+          <div class="ml-3 font-semibold text-sm">Matt matt</div>
+        </div>
+
+        <div
+          id="indicators-carousel"
+          class="relative w-80"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div
+            class="relative h-100 flex justify-center gap-5 px-2 overflow-hidden rounded-base md:h-96"
+          >
+            <!-- Item 1 -->
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w3.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w1.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w4.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w5.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+          </div>
+
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m15 19-7-7 7-7"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m9 5 7 7-7 7"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="flex justify-between items-center px-4 py-3">
+          <div class="flex gap-4">
+            <button class="hover:opacity-60">❤️</button>
+            <button class="hover:opacity-60">💬</button>
+            <button class="hover:opacity-60">✈️</button>
+          </div>
+          <button class="hover:opacity-60">🔖</button>
+        </div>
+
+        <div class="px-4 pb-4">
+          <div class="font-semibold text-sm mb-1">1,234 likes</div>
+          <div class="text-sm">
+            <span class="font-semibold">Matt matt</span>
+            Its my Birthday!!
+          </div>
+          <div class="text-gray-500 text-xs mt-2 uppercase tracking-wide">
+            2 hours ago
+          </div>
+        </div>
+      </div>
+
+      <!-- hatii -->
+
+      <div
+        class="max-w-md mx-auto bg-white border border-gray-300 rounded-lg overflow-hidden my-6"
+      >
+        <div class="flex items-center px-4 py-3">
+          <img
+            class="h-10 w-10 rounded-full object-cover border border-gray-200"
+            src="./pic/ig.JPG"
+            alt="Avatar"
+          />
+          <div class="ml-3 font-semibold text-sm">Matt matt</div>
+        </div>
+
+        <div
+          id="indicators-carousel"
+          class="relative w-80"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div
+            class="relative h-100 flex justify-center gap-5 px-2 overflow-hidden rounded-base md:h-96"
+          >
+            <!-- Item 1 -->
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w1.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w17.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w18.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w19.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+          </div>
+
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m15 19-7-7 7-7"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m9 5 7 7-7 7"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="flex justify-between items-center px-4 py-3">
+          <div class="flex gap-4">
+            <button class="hover:opacity-60">❤️</button>
+            <button class="hover:opacity-60">💬</button>
+            <button class="hover:opacity-60">✈️</button>
+          </div>
+          <button class="hover:opacity-60">🔖</button>
+        </div>
+
+        <div class="px-4 pb-4">
+          <div class="font-semibold text-sm mb-1">1,234 likes</div>
+          <div class="text-sm">
+            <span class="font-semibold">Matt matt</span>
+            hey look im so cute!!!
+          </div>
+          <div class="text-gray-500 text-xs mt-2 uppercase tracking-wide">
+            2 hours ago
+          </div>
+        </div>
+      </div>
+
+
+   
+
+
+      <!-- sdsdsd -->
+            <div
+        class="max-w-md mx-auto bg-white border border-gray-300 rounded-lg overflow-hidden my-6"
+      >
+        <div class="flex items-center px-4 py-3">
+          <img
+            class="h-10 w-10 rounded-full object-cover border border-gray-200"
+            src="./pic/ig.JPG"
+            alt="Avatar"
+          />
+          <div class="ml-3 font-semibold text-sm">Matt matt</div>
+        </div>
+
+        <div
+          id="indicators-carousel"
+          class="relative w-80"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div
+            class="relative h-100 flex justify-center gap-5 px-2 overflow-hidden rounded-base md:h-96"
+          >
+            <!-- Item 1 -->
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w23.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w24.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w25.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w9.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+
+                 <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                class="h-auto max-w-full rounded-lg cursor-pointer hover:opacity-90 transition"
+                src="pic/w10.JPG"
+                alt="Description"
+                onclick="openFullImage(this.src)"
+              />
+            </div>
+          </div>
+
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-base"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m15 19-7-7 7-7"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m9 5 7 7-7 7"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="flex justify-between items-center px-4 py-3">
+          <div class="flex gap-4">
+            <button class="hover:opacity-60">❤️</button>
+            <button class="hover:opacity-60">💬</button>
+            <button class="hover:opacity-60">✈️</button>
+          </div>
+          <button class="hover:opacity-60">🔖</button>
+        </div>
+
+        <div class="px-4 pb-4">
+          <div class="font-semibold text-sm mb-1">1,234 likes</div>
+          <div class="text-sm">
+            <span class="font-semibold">Matt matt</span>
+            See you there!!
+          </div>
+          <div class="text-gray-500 text-xs mt-2 uppercase tracking-wide">
+            2 hours ago
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function openFullImage(imageSrc) {
+      const modal = document.getElementById("imageModal");
+      const fullImg = document.getElementById("fullImage");
+
+      fullImg.src = imageSrc; // Set the source of the big image
+      modal.classList.remove("hidden"); // Show the modal
+      document.body.style.overflow = "hidden"; // Prevent scrolling while viewing
+    }
+
+    function closeFullImage() {
+      const modal = document.getElementById("imageModal");
+      modal.classList.add("hidden"); // Hide the modal
+      document.body.style.overflow = "auto"; // Re-enable scrolling
+    }
+
+    // Optional: Close when clicking anywhere outside the image
+    document
+      .getElementById("imageModal")
+      .addEventListener("click", function (e) {
+        if (e.target === this) closeFullImage();
+      });
+  </script>
+</html>
